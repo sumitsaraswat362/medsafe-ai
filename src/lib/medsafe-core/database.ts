@@ -3511,6 +3511,41 @@ export const DRUGS: Drug[] = [
     aliases: ["methotrenib","methotrenib","methoex"],
     hasBlackBoxWarning: false,
     contraindications: []
+  },
+  {
+    id: 'f001', name: 'Grapefruit Juice', genericName: 'Grapefruit',
+    category: 'Dietary / Food',
+    aliases: ['grapefruit', 'pomelo', 'citrus'],
+    hasBlackBoxWarning: false,
+    contraindications: []
+  },
+  {
+    id: 'f002', name: 'St. John\'s Wort', genericName: 'Hypericum perforatum',
+    category: 'Herbal Supplement',
+    aliases: ['st johns wort', 'st john', 'hypericum'],
+    hasBlackBoxWarning: false,
+    contraindications: []
+  },
+  {
+    id: 'f003', name: 'Alcohol', genericName: 'Ethanol',
+    category: 'Dietary / Toxin',
+    aliases: ['alcohol', 'ethanol', 'liquor', 'beer', 'wine'],
+    hasBlackBoxWarning: false,
+    contraindications: []
+  },
+  {
+    id: 'f004', name: 'Calcium Supplement', genericName: 'Calcium Carbonate',
+    category: 'Dietary Supplement',
+    aliases: ['calcium', 'tums', 'calcium citrate'],
+    hasBlackBoxWarning: false,
+    contraindications: []
+  },
+  {
+    id: 'f005', name: 'Iron Supplement', genericName: 'Ferrous Sulfate',
+    category: 'Dietary Supplement',
+    aliases: ['iron', 'ferrous', 'fe'],
+    hasBlackBoxWarning: false,
+    contraindications: []
   }
 ];
 
