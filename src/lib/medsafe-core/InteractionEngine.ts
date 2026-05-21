@@ -69,10 +69,10 @@ export class InteractionEngine {
     }
 
     // Check Drug-to-Disease Profile Warnings
-    if (profile && profile.conditions.length > 0) {
+    if (profile && Array.isArray(profile.conditions) && profile.conditions.length > 0) {
       drugs.forEach(drug => {
         profile.conditions.forEach(condition => {
-          if (drug.contraindications.includes(condition)) {
+          if (drug.contraindications?.includes(condition)) {
             patientWarnings.push({
               drug,
               condition,
