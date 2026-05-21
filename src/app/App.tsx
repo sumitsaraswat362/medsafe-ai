@@ -1030,7 +1030,7 @@ const ResultsScreen = ({ selectedDrugs, profile, setUiState, onNavigate }: any) 
                     <div className="font-bold text-[18px] mb-1.5 print:text-black" style={{ color }}>{pair.drug1.name} + {pair.drug2.name}</div>
                     <div className="text-[#8E8E93] text-[14px] leading-relaxed mb-3 print:text-black">{pair.interaction.description}</div>
                     <div className="text-[#8E8E93] text-[12px] italic mb-3 print:text-black">Mechanism: {pair.interaction.mechanism}</div>
-                    {pair.interaction.alternatives.length > 0 && (
+                    {pair.interaction.alternatives && pair.interaction.alternatives.length > 0 && (
                       <div className="bg-[#32D74B]/8 border border-[#32D74B]/15 p-3 rounded-xl print:bg-transparent print:border-green-600">
                         <div className="text-[#32D74B] font-bold text-[11px] uppercase mb-1.5">Safer Alternatives</div>
                         <ul className="text-white/80 text-[13px] space-y-1 print:text-black">
